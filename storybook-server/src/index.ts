@@ -21,6 +21,7 @@ app.post("/api/storybook", async (req, res) => {
         model: "gpt-3.5-turbo",
     });
     console.log(completion.choices[0]);
+    res.end();
 })
 
 app.listen(5000, () => {
