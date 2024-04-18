@@ -58,7 +58,7 @@ const App = () => {
         }
       );
       const newNote = await response.json();
-
+      console.log(newNote);
     } catch (e) {
       console.log("ERROR! ", e)
     }
